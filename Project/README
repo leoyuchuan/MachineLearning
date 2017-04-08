@@ -1,0 +1,41 @@
+Note: !!!!We use two free late days!!!!
+
+Language Used: R
+
+Preliminary:
+1) Have internet access
+2) Have R installed
+3) Install required packages
+4) Have Java installed
+5) Have Ram at least 4GB, more is recommended
+6) Have disk space more than 10GB.
+
+Instructions:
+There are three R files. To use them, please
+1) Download all dataset from https://www.kaggle.com/c/outbrain-click-prediction/data.
+2) Extract them from zip file. The extracted files are with ".csv" extension.
+3) Put all R files and csv datasets into same folder.
+
+Before running "MLProject_Evaluate.R" and "MLProject_Submission.R", you have to run "MLProject_Preprocess.R" first.
+
+Instruction for "MLProject_Preprocess.R":
+1) open terminal and navigate to code folder.
+2) "Rscript MLProject_Preprocess.R clicks_train.csv clicks_test.csv"
+3) Processing will be outputed through terminal and three csv file "pp_train.csv", "pp_test.csv", and "submission_test.csv" will be generated. 
+
+After having three new generated files, you could run "MLProject_Evaluate.R", and "MLProject_Submission.R".
+
+Instruction for "MLProject_Evaluate.R":
+1) open terminal and navigate to code folder.
+2) "Rscript MLProject_Evaluate.R pp_train.csv pp_test.csv"
+3) Processing will be outputed through terminal and a output.log file will be generated.
+
+Instruction for "MLProject_Submission.R":
+1) open terminal and navigate to code folder.
+2) "Rscript MLProject_Submission.R submission_test.csv"
+3) Processing will be outputed through terminal and four submission files for competition will be generated. 
+
+Required Packages:
+1) h2o
+2) data.table
+3) Metrics
